@@ -9,7 +9,8 @@ const translateMinion = (input) => {
     .then((response) => response.json())
     .then((data) => {
       outputText.innerText = data.contents.translated;
-    });
+    })
+  .catch(err=>alert(err));
 };
 
 handleBtn.addEventListener("click", () => {
