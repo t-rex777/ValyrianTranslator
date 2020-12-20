@@ -10,7 +10,7 @@ const translateMinion = (input) => {
     .then((data) => {
       outputText.innerText = data.contents.translated;
     })
-  .catch(err=>console.log(err));
+  .catch(alert("API requests maxed out"));
 };
 
 handleBtn.addEventListener("click", () => {
